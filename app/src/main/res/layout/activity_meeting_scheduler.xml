@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_photo_guidlines">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:text="Back" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Schedule Meeting"
+            android:textSize="20sp"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/meetingAgenda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter meeting agenda"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/startDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Start Date and Time" />
+
+        <EditText
+            android:id="@+id/duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duration (e.g., 1 hour)" />
+
+        <EditText
+            android:id="@+id/timeZone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Time Zone" />
+
+        <Button
+            android:id="@+id/add_members_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:text="Add Members"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/saveMeetingButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:text="Save" />
+    </LinearLayout>
+</ScrollView>
