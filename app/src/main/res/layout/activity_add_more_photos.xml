@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/background4">
+
+    <!-- Title TextView -->
+
+    <!-- Photo Grid -->
+
+    <!-- Continue Button -->
+
+    <TextView
+        android:id="@+id/addMorePhotosTitle"
+        android:layout_width="274dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="217dp"
+        android:text="            Add more photos"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <GridLayout
+        android:id="@+id/photoGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addMorePhotosTitle"
+        android:layout_marginTop="53dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="3"
+        android:padding="16dp">
+
+        <!-- Displaying three sample photos -->
+        <ImageView
+            android:id="@+id/photo1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:contentDescription="Sample Photo 1"
+            android:src="@drawable/sample1" />
+
+        <ImageView
+            android:id="@+id/photo2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:contentDescription="Sample Photo 2"
+            android:src="@drawable/sample2" />
+
+        <ImageView
+            android:id="@+id/photo3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:contentDescription="Sample Photo 3"
+            android:src="@drawable/sample3" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="154dp"
+        android:backgroundTint="#F8A126"
+        android:text="Continue"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>

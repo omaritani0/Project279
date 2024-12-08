@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_drawing">
+
+    <!-- Logo ImageView -->
+
+    <!-- Photo Upload Icon -->
+
+    <!-- Add Photo Button -->
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="142dp"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/img_1" />
+
+    <ImageView
+        android:id="@+id/photoUploadIcon"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="123dp"
+        android:contentDescription="Upload photo"
+        android:src="@drawable/img" />
+
+    <Button
+        android:id="@+id/addPhotoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/photoUploadIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button_background"
+        android:backgroundTint="#E8731D"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="Add Photo"
+        android:textColor="#FFFFFF" />
+
+    <!-- Skip Button -->
+    <Button
+        android:id="@+id/skipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addPhotoButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_button_background"
+        android:backgroundTint="#E8731D"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="Skip"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FBFBFB"
+        android:textColorLink="#EBBDE5"
+        app:strokeColor="#813232" />
+
+    <!-- Guidelines -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/skipButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp">
+
+        <!-- Guideline 1: Clear Face -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear face"
+            android:textColor="#666666"
+            android:drawableTop="@drawable/ic_clear_face"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:padding="8dp"/>
+
+        <!-- Guideline 2: No Sunglasses -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No sunglasses"
+            android:textColor="#666666"
+            android:drawableTop="@drawable/ic_no_sunglasses"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:padding="8dp"/>
+
+        <!-- Guideline 3: No Group -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No group"
+            android:textColor="#666666"
+            android:drawableTop="@drawable/ic_no_group"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
